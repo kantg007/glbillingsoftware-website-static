@@ -3,343 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GL Billing Software - India's First Free Billing Software</title>
-
+<title>GL Billing Software - Free GST Billing Software India</title>
+<meta name="description" content="GL Billing Software is India's first free billing software. GST Billing, Inventory Management, GSTR Reports, Invoice Printing and Timber Billing Software for Indian businesses.">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f5f7fb;
-color:#222;
-}
-
-.navbar{
-background:#1E2442;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:32px;
-font-weight:700;
-}
-
-.logo .gl{
-color:#FF7A21;
-}
-
-.logo .billing{
-color:white;
-}
-
-.download-btn{
-background:#2196F3;
-color:white;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-}
-
-.hero{
-padding:70px 8%;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-
-.hero h1{
-font-size:48px;
-line-height:1.2;
-color:#1E2442;
-}
-
-.hero h1 span{
-color:#FF7A21;
-}
-
-.hero p{
-margin-top:20px;
-font-size:18px;
-color:#666;
-}
-
-.features{
-margin-top:25px;
-}
-
-.features li{
-list-style:none;
-padding:8px 0;
-font-size:18px;
-}
-
-.hero img{
-width:100%;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-.cta{
-margin-top:30px;
-display:flex;
-gap:15px;
-}
-
-.btn-primary{
-background:#FF7A21;
-color:white;
-padding:14px 30px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-}
-
-.btn-secondary{
-background:#1E2442;
-color:white;
-padding:14px 30px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-}
-
-.section-title{
-text-align:center;
-font-size:38px;
-color:#1E2442;
-margin-bottom:40px;
-}
-
-.screenshots{
-padding:80px 8%;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-padding:15px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.card h3{
-margin-top:15px;
-color:#1E2442;
-}
-
-.features-grid{
-padding:80px 8%;
-background:white;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.feature-box{
-background:#f5f7fb;
-padding:25px;
-border-radius:12px;
-}
-
-.feature-box h4{
-color:#1E2442;
-margin-bottom:10px;
-}
-
-.download-section{
-padding:100px 8%;
-text-align:center;
-background:#1E2442;
-color:white;
-}
-
-.download-section h2{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.download-section p{
-margin-bottom:30px;
-font-size:18px;
-}
-
-.footer{
-padding:25px;
-text-align:center;
-background:#11182f;
-color:white;
-}
-
-@media(max-width:900px){
-.hero{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:34px;
-}
-
-.gallery{
-grid-template-columns:1fr;
-}
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#f5f7fb;color:#222}
+.navbar{background:#1E2442;padding:18px 8%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:32px;font-weight:700}.gl{color:#FF7A21}.billing{color:#fff}
+.btn{background:#FF7A21;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:600}
+.hero{padding:70px 8%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:48px;color:#1E2442}
+.hero p{margin:20px 0;color:#555;font-size:18px}
+.hero img,.card img{width:100%;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.12)}
+.trust{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.trust span{background:#fff;padding:8px 14px;border-radius:20px}
+.section{padding:70px 8%}
+.title{text-align:center;font-size:38px;color:#1E2442;margin-bottom:10px}
+.subtitle{text-align:center;color:#666;margin-bottom:40px}
+.gallery,.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card,.box{background:#fff;padding:15px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+.box{padding:25px}
+.download{background:#1E2442;color:#fff;text-align:center}
+.footer{background:#11182f;color:#fff;text-align:center;padding:25px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;text-decoration:none;padding:14px 20px;border-radius:30px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:34px}}
 </style>
 </head>
-
 <body>
-
 <nav class="navbar">
-<div class="logo">
-<span class="gl">GL</span>
-<span class="billing"> Billing Software</span>
-</div>
-
-<a href="https://download.glbillingsoftware.in/BillStockApp_Setup_2.2.0/BillStockApp_Setup_2.2.0.exe" class="download-btn">
-Download Free
-</a>
+<div class="logo"><span class="gl">GL</span><span class="billing"> Billing Software</span></div>
+<a class="btn" href="#" onclick="showDownloadPopup()">Download Free</a>
 </nav>
 
 <section class="hero">
-
 <div>
-
-<h1>
-India's First <span>Free Billing Software</span>
-</h1>
-
-<p>
-GST Billing, Inventory Management, Accounting,
-GSTR Reports and Timber Industry Support.
-</p>
-
-<ul class="features">
-<li>✔ GST Tax Invoices</li>
-<li>✔ Inventory Management</li>
-<li>✔ GSTR-1 Export</li>
-<li>✔ Cash & Bank Accounts</li>
-<li>✔ Profit & Loss Reports</li>
-<li>✔ Timber Billing Special Features</li>
-</ul>
-
-<div class="cta">
-<a href="https://download.glbillingsoftware.in/GLBillingSetup.exe" class="btn-primary">
-Download Free
-</a>
-
-<a href="#screenshots" class="btn-secondary">
-View Screenshots
-</a>
+<h1>Free GST Billing Software for Indian Businesses</h1>
+<p>Create GST invoices, manage inventory, generate GSTR reports, track stock and manage accounts with GL Billing Software.</p>
+<div class="trust">
+<span>100% Free</span><span>No Subscription</span><span>GST Ready</span><span>Made in India</span>
 </div>
-
+<a class="btn" href="#" onclick="showDownloadPopup()">Download Now</a>
 </div>
-
-<div>
-<img src="images/dashboard.png" alt="Dashboard">
-</div>
-
+<div><img src="images/dashboard.png" alt="Dashboard"></div>
 </section>
 
-<section class="features-grid">
-
-<h2 class="section-title">Why GL Billing Software?</h2>
-
-<div class="grid">
-
-<div class="feature-box">
-<h4>GST Billing</h4>
-<p>Create GST invoices in seconds.</p>
-</div>
-
-<div class="feature-box">
-<h4>Inventory Management</h4>
-<p>Track stock with complete accuracy.</p>
-</div>
-
-<div class="feature-box">
-<h4>GSTR Reports</h4>
-<p>Export GSTR-1 reports directly.</p>
-</div>
-
-<div class="feature-box">
-<h4>Timber Industry Support</h4>
-<p>CBM, CFT, Lots and Timber billing support.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="screenshots" id="screenshots">
-
-<h2 class="section-title">Software Screenshots</h2>
-
+<section class="section">
+<h2 class="title">See GL Billing in Action</h2>
+<p class="subtitle">Explore real screens from GL Billing Software used by businesses across India.</p>
 <div class="gallery">
-
-<div class="card">
-<img src="images/dashboard.png">
-<h3>Business Dashboard</h3>
+<div class="card"><img src="images/dashboard.png"><h3>Business Dashboard</h3></div>
+<div class="card"><img src="images/sale-entry.png"><h3>Fast Sale Entry</h3></div>
+<div class="card"><img src="images/gstr1-report.png"><h3>GST & GSTR Reports</h3></div>
+<div class="card"><img src="images/invoice-print.png"><h3>Professional Invoice Printing</h3></div>
 </div>
-
-<div class="card">
-<img src="images/sale-entry.png">
-<h3>Fast Sale Entry</h3>
-</div>
-
-<div class="card">
-<img src="images/gstr1-report.png">
-<h3>GST Reports</h3>
-</div>
-
-<div class="card">
-<img src="images/invoice-print.png">
-<h3>Professional Invoice Printing</h3>
-</div>
-
-</div>
-
 </section>
 
-<section class="download-section">
+<section class="section">
+<h2 class="title">Perfect For</h2>
+<div class="grid">
+<div class="box"><h3>Timber Traders</h3><p>CBM, CFT and Lot Management.</p></div>
+<div class="box"><h3>Hardware Stores</h3><p>GST Billing and Inventory.</p></div>
+<div class="box"><h3>Retail Shops</h3><p>Fast Billing and Stock Management.</p></div>
+<div class="box"><h3>Wholesalers</h3><p>Purchase, Sale and Ledger Management.</p></div>
+</div>
+</section>
 
-<h2>Download GL Billing Software</h2>
+<section class="section">
+<h2 class="title">Frequently Asked Questions</h2>
+<div class="grid">
+<div class="box"><h3>Is it free?</h3><p>Yes, completely free.</p></div>
+<div class="box"><h3>GST Billing?</h3><p>Yes, fully supported.</p></div>
+<div class="box"><h3>Inventory?</h3><p>Yes, inventory management included.</p></div>
+<div class="box"><h3>Support?</h3><p>Call or WhatsApp +91 92197 06578</p></div>
+</div>
+</section>
 
-<p>
-Free GST Billing Software for Indian Businesses
+<section class="section download">
+<h2 class="title" style="color:white">Download GL Billing Software</h2>
+<p style="margin:20px 0">India's First Free Billing Software</p>
+<a class="btn" href="#" onclick="showDownloadPopup()">Download Now</a>
+</section>
+
+<div id="popup" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);align-items:center;justify-content:center">
+<div style="background:white;padding:30px;border-radius:15px;max-width:450px;text-align:center">
+<h2>GL Billing Software</h2>
+<p style="margin:15px 0">India's First Free Billing Software</p>
+<p>Need installation help?</p>
+<p><b>Call / WhatsApp</b><br>+91 92197 06578</p>
+<p style="margin-top:20px">
+<a class="btn" href="https://download.glbillingsoftware.in/BillStockApp_Setup_2.2.0/BillStockApp_Setup_2.2.0.exe">Download Now</a>
 </p>
+<p style="margin-top:15px"><button onclick="closePopup()">Close</button></p>
+</div>
+</div>
 
-<a href="https://download.glbillingsoftware.in/BillStockApp_Setup_2.2.0/BillStockApp_Setup_2.2.0.exe" class="btn-primary">
-Download Now
-</a>
-
-</section>
+<a class="whatsapp" href="https://wa.me/919219706578">WhatsApp Us</a>
 
 <footer class="footer">
-© 2026 GL Billing Software. All Rights Reserved.
+<p>© 2026 GL Billing Software</p>
+<p>Support: +91 92197 06578</p>
 </footer>
 
+<script>
+function showDownloadPopup(){document.getElementById('popup').style.display='flex';}
+function closePopup(){document.getElementById('popup').style.display='none';}
+</script>
 </body>
 </html>
