@@ -1,75 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GL Billing Software - India's First Free Billing Software</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GL Billing Software - India's First Free Billing Software</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#222;
+}
+
+.navbar{
+background:#1E2442;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:700;
+}
+
+.logo .gl{
+color:#FF7A21;
+}
+
+.logo .billing{
+color:white;
+}
+
+.download-btn{
+background:#2196F3;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero{
+padding:70px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.hero h1{
+font-size:48px;
+line-height:1.2;
+color:#1E2442;
+}
+
+.hero h1 span{
+color:#FF7A21;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+color:#666;
+}
+
+.features{
+margin-top:25px;
+}
+
+.features li{
+list-style:none;
+padding:8px 0;
+font-size:18px;
+}
+
+.hero img{
+width:100%;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.cta{
+margin-top:30px;
+display:flex;
+gap:15px;
+}
+
+.btn-primary{
+background:#FF7A21;
+color:white;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-secondary{
+background:#1E2442;
+color:white;
+padding:14px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+}
+
+.section-title{
+text-align:center;
+font-size:38px;
+color:#1E2442;
+margin-bottom:40px;
+}
+
+.screenshots{
+padding:80px 8%;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h3{
+margin-top:15px;
+color:#1E2442;
+}
+
+.features-grid{
+padding:80px 8%;
+background:white;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.feature-box{
+background:#f5f7fb;
+padding:25px;
+border-radius:12px;
+}
+
+.feature-box h4{
+color:#1E2442;
+margin-bottom:10px;
+}
+
+.download-section{
+padding:100px 8%;
+text-align:center;
+background:#1E2442;
+color:white;
+}
+
+.download-section h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.download-section p{
+margin-bottom:30px;
+font-size:18px;
+}
+
+.footer{
+padding:25px;
+text-align:center;
+background:#11182f;
+color:white;
+}
+
+@media(max-width:900px){
+.hero{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.gallery{
+grid-template-columns:1fr;
+}
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <div class="container">
-        <h1>GL Billing Software</h1>
-        <p>India's First Free Billing Software</p>
-        <a href="https://download.glbillingsoftware.in/BillStockApp_Setup_2.2.0/BillStockApp_Setup_2.2.0.exe" class="btn">
-            Download Free
-        </a>
-    </div>
-</header>
+<nav class="navbar">
+<div class="logo">
+<span class="gl">GL</span>
+<span class="billing"> Billing Software</span>
+</div>
 
-<section class="features">
-    <div class="container">
-        <h2>Why Choose GL Billing Software?</h2>
+<a href="https://download.glbillingsoftware.in/GLBillingSetup.exe" class="download-btn">
+Download Free
+</a>
+</nav>
 
-        <div class="card">
-            <h3>GST Billing</h3>
-            <p>Create GST invoices easily.</p>
-        </div>
+<section class="hero">
 
-        <div class="card">
-            <h3>Inventory Management</h3>
-            <p>Track stock and purchases.</p>
-        </div>
+<div>
 
-        <div class="card">
-            <h3>Customer & Supplier Ledger</h3>
-            <p>Manage accounts with ease.</p>
-        </div>
+<h1>
+India's First <span>Free Billing Software</span>
+</h1>
 
-        <div class="card">
-            <h3>100% Free</h3>
-            <p>No monthly charges.</p>
-        </div>
-    </div>
+<p>
+GST Billing, Inventory Management, Accounting,
+GSTR Reports and Timber Industry Support.
+</p>
+
+<ul class="features">
+<li>✔ GST Tax Invoices</li>
+<li>✔ Inventory Management</li>
+<li>✔ GSTR-1 Export</li>
+<li>✔ Cash & Bank Accounts</li>
+<li>✔ Profit & Loss Reports</li>
+<li>✔ Timber Billing Special Features</li>
+</ul>
+
+<div class="cta">
+<a href="https://download.glbillingsoftware.in/GLBillingSetup.exe" class="btn-primary">
+Download Free
+</a>
+
+<a href="#screenshots" class="btn-secondary">
+View Screenshots
+</a>
+</div>
+
+</div>
+
+<div>
+<img src="images/dashboard.png" alt="Dashboard">
+</div>
+
 </section>
 
-<section class="about">
-    <div class="container">
-        <h2>About GL Billing Software</h2>
+<section class="features-grid">
 
-        <p>
-            GL Billing Software is a modern billing and inventory management
-            solution designed for Indian businesses. Generate GST invoices,
-            manage stock, track purchases and sales, and grow your business.
-        </p>
-    </div>
+<h2 class="section-title">Why GL Billing Software?</h2>
+
+<div class="grid">
+
+<div class="feature-box">
+<h4>GST Billing</h4>
+<p>Create GST invoices in seconds.</p>
+</div>
+
+<div class="feature-box">
+<h4>Inventory Management</h4>
+<p>Track stock with complete accuracy.</p>
+</div>
+
+<div class="feature-box">
+<h4>GSTR Reports</h4>
+<p>Export GSTR-1 reports directly.</p>
+</div>
+
+<div class="feature-box">
+<h4>Timber Industry Support</h4>
+<p>CBM, CFT, Lots and Timber billing support.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="contact">
-    <div class="container">
-        <h2>Need Help?</h2>
+<section class="screenshots" id="screenshots">
 
-        <p>Email: support@glbillingsoftware.in</p>
+<h2 class="section-title">Software Screenshots</h2>
 
-        <a href="https://wa.me/919999999999" class="btn">
-            WhatsApp Support
-        </a>
-    </div>
+<div class="gallery">
+
+<div class="card">
+<img src="images/dashboard.png">
+<h3>Business Dashboard</h3>
+</div>
+
+<div class="card">
+<img src="images/sale-entry.png">
+<h3>Fast Sale Entry</h3>
+</div>
+
+<div class="card">
+<img src="images/gstr1-report.png">
+<h3>GST Reports</h3>
+</div>
+
+<div class="card">
+<img src="images/invoice-print.png">
+<h3>Professional Invoice Printing</h3>
+</div>
+
+</div>
+
 </section>
 
-<footer>
-    <p>© 2026 GL Billing Software. All Rights Reserved.</p>
+<section class="download-section">
+
+<h2>Download GL Billing Software</h2>
+
+<p>
+Free GST Billing Software for Indian Businesses
+</p>
+
+<a href="https://download.glbillingsoftware.in/GLBillingSetup.exe" class="btn-primary">
+Download Now
+</a>
+
+</section>
+
+<footer class="footer">
+© 2026 GL Billing Software. All Rights Reserved.
 </footer>
 
 </body>
